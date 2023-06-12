@@ -87,26 +87,7 @@ const routes = [
                 path: 'logout',
                 name: 'admin-logout',
                 component: () => import('@/views/admin/logout.vue')
-            }, {
-                path: 'changepassword',
-                name: 'admin-changepassword',
-                component: () => import('@/views/admin/changepassword.vue')
-            },
-            {
-                path: 'forgetpassword',
-                name: 'admin-forgetpassword',
-                component: () => import('@/views/admin/forgetpassword.vue')
-            },
-            {
-                path: 'resourceCategory',
-                name: 'admin-resourceCategory',
-                component: () => import('@/views/admin/resourceCategory.vue')
-            },
-            {
-                path: 'cmshelpcategory',
-                name: 'admin-cmshelpcategory',
-                component: () => import('@/views/admin/cmshelpcategory.vue')
-            },
+            }
 
         ]
     },
