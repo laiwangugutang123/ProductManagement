@@ -41,6 +41,7 @@ export default {
     height: 20%;
     display: flex;
     direction: ltr;
+    margin: 0 auto;
 }
 
 .down {

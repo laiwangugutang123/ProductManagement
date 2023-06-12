@@ -2,11 +2,11 @@
     <div>
         <div class="up">
             <el-button type="primary" @click="doAdd()">
-            <el-icon style="vertical-align: middle;">
-                <circle-plus />
-            </el-icon>
-            <span style="vertical-align: middle;"> 新建 </span>
-        </el-button>
+                <el-icon style="vertical-align: middle;">
+                    <circle-plus />
+                </el-icon>
+                <span style="vertical-align: middle;"> 新建 </span>
+            </el-button>
         </div>
 
         <div class="down">
@@ -42,7 +42,7 @@
                             <template #default="scope">
                                 <span>{{ scope.row.publishStatus == 0 ? '下架' : '上架' }}</span>
                             </template>
-                        </el-table-column> 
+                        </el-table-column>
                         <el-table-column label="推荐状态" width="80">
                             <template #default="scope">
                                 <span>{{ scope.row.recommandStatus == 0 ? '不推荐' : '推荐' }}</span>
@@ -50,12 +50,12 @@
                         </el-table-column>
                         <el-table-column label="图片" width="180">
                             <template #default="scope">
-                                <img :src="scope.row.pic" style="width: 150px;height: 150px;"/>
+                                <img :src="scope.row.pic" style="width: 150px;height: 150px;" />
                             </template>
                         </el-table-column>
                         <el-table-column label="画册图片" width="180">
                             <template #default="scope">
-                                <img :src="scope.row.albumPics" style="width: 150px;height: 150px;"/>
+                                <img :src="scope.row.albumPics" style="width: 150px;height: 150px;" />
                             </template>
                         </el-table-column>
                         <el-table-column label="商品服务" width="80">
@@ -161,8 +161,8 @@ export default {
                 { prop: "brandName", label: "品牌名称", width: 100 },
                 { prop: "description", label: "商品描述", width: 100 },
                 { prop: "detailDesc", label: "详情描述", width: 100 },
-                { prop: "detailHtml", label: "商品详情网页内容", width: 400 },
-                { prop: "detailMobileHtml", label: "移动端网页详情", width: 400 },
+                // { prop: "detailHtml", label: "商品详情网页内容", width: 400 },
+                // { prop: "detailMobileHtml", label: "移动端网页详情", width: 400 },
 
                 { prop: "detailTitle", label: "详情标题", width: 100 },
                 { prop: "feightTemplateId", label: "运费模板id", width: 100 },
@@ -204,10 +204,13 @@ export default {
     display: flex;
     justify-content: center;
 }
+
 .ls {
     height: 700px;
     overflow-y: auto;
+    display: flex;
 }
+
 .down {
     margin-top: 20px;
     display: flex;
