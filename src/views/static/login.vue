@@ -30,7 +30,7 @@ import { userLogin } from "../../http";
 import { useUserStore } from "../../store/user";
 export default defineComponent({
     setup() {
-        const src = ref('../../src/assets/shop.jpg');
+        const src = ref('@/assets/shop.jpg');
         return {
             src,
         }
