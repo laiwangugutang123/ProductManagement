@@ -30,7 +30,7 @@ import { userLogin } from "../../http";
 import { useUserStore } from "../../store/user";
 export default defineComponent({
     setup() {
-        const src = ref('@/assets/shop.jpg');
+        const src = ref('https://avatars.mds.yandex.net/get-images-cbir/2205849/wzfdqpV62JzBiQZTvNsStg3012/ocr');
         return {
             src,
         }
