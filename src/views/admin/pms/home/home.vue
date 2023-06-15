@@ -37,7 +37,7 @@ export default {
 </script>
 <style  scoped>
 .up {
-    width: 100%;
+    width: 80%;
     height: 20%;
     display: flex;
     direction: ltr;
